@@ -24,7 +24,7 @@ def market_parser(game):
                 else:
                     dict_market[name]['buy_order'] = 1
                 dict_market[name]['avg_price'] = req.get('avg_price', 1)
-                if req.get('popularity_7d'):
+                if req.get('popularity_7d') and int(req.get('popularity_7d')) > int(dict_market[name]['popularity_7d']): #!!!!
                     dict_market[name]['popularity_7d'] = req.get('popularity_7d', 1)
                 else:
                     dict_market[name]["popularity_7d"] = 1
