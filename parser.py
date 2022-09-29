@@ -2,7 +2,7 @@ import pprint
 
 from dict_save_exc import savetoexcel
 from initialize_buff_settings import session, min_price, max_price, game, message_initialization
-from course_dol_rub_cny import CourseCnyRub, CourseDolRub
+from course_dol_rub_cny import CourseCnyRub
 from buffparser import buff_parser
 from marketparser import market_parser
 
