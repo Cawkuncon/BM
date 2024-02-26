@@ -5,7 +5,7 @@ def market_parser(game):
     link_game = ''
     link_req = ''
     if game == 'csgo':
-        link_game = 'https://market.csgo.com/item/'
+        link_game = 'https://market-old.csgo.com/item/'
         link_req = 'https://market.csgo.com/api/v2/prices/class_instance/RUB.json'
     elif game == 'dota2':
         link_game = 'https://market.dota2.net/item/'

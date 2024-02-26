@@ -1,3 +1,4 @@
+import time
 import requests
 
 
@@ -29,5 +30,6 @@ def buff_parser(session, min_price, max_price, game, message_initialization):
                 dict_items[name_item]['count_sell'] = item.get('sell_num', 1)
                 dict_items[name_item]['steam_link'] = item.get('steam_market_url')
         page += 1
+        time.sleep(8)
     print('parser buff end')
     return dict_items
